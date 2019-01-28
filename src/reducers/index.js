@@ -24,7 +24,7 @@ export default (state = initialState, action) => {
         count: action.payload - 1
       }
     case INCREMENT_IF_ODD:
-      if((action.payload%2) != 0 ) {
+      if((action.payload%2) !== 0 ) {
         return {
           ...state,
           count: action.payload + 1
